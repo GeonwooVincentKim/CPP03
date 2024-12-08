@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/08 23:17:43 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/08 23:29:30 by geonwkim         ###   ########.fr       */
+/*   Created: 2024/12/08 23:32:31 by geonwkim          #+#    #+#             */
+/*   Updated: 2024/12/08 23:32:57 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLAPTRAP_HPP
-# define CLAPTRAP_HPP
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
-#include <iostream> 
-#include <string>
+#include "ClapTrap.hpp"
 
-class ClapTrap {
-private:
-	std::string name;
-	unsigned int hit_points;
-	unsigned int energy_points;
-	unsigned int attack_damage;
-
+class ScavTrap : public ClapTrap {
 public:
-	ClapTrap(const std::string name);
-	ClapTrap(const ClapTrap& claptrap);
-	~ClapTrap();
-	ClapTrap& operator=(const ClapTrap& claptrap);
+	ScavTrap(const std::string name);
+	ScavTrap(const ScavTrap& scavtrap);
+	~ScavTrap();
+	ScavTrap& operator=(const ScavTrap& scavtrap);
 
 	void attack(const std::string& target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+	void guardGate();
 };
 
 #endif

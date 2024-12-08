@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 23:17:43 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/08 23:29:30 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/08 23:34:46 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@
 #include <string>
 
 class ClapTrap {
-private:
+protected:
 	std::string name;
-	unsigned int hit_points;
-	unsigned int energy_points;
-	unsigned int attack_damage;
+	int hit_points;
+	int energy_points;
+	int attack_damage;
 
 public:
 	ClapTrap(const std::string name);
