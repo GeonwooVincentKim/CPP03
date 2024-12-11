@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 23:33:13 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/08 23:38:29 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/11 21:03:15 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,9 @@ ScavTrap::~ScavTrap() {
 }
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& scavtrap) {
-	ClapTrap::operator=(scavtrap);
+	if (this != &scavtrap) {
+		ClapTrap::operator=(scavtrap);
+	}
 	std::cout << "ScavTrap " << name << " has been assigned!" << std::endl;
 	return *this;
 }

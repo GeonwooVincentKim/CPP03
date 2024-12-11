@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 23:45:06 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/08 23:46:53 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/11 21:03:02 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,9 @@ FragTrap::~FragTrap() {
 }
 
 FragTrap& FragTrap::operator=(const FragTrap& fragtrap) {
-	ClapTrap::operator=(fragtrap);
+	if (this != &fragtrap) {
+		ClapTrap::operator=(fragtrap);
+	}
 	std::cout << "FragTrap " << name << " has been assigned!" << std::endl;
 	return (*this);
 }
