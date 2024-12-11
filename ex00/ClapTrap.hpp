@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 23:17:43 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/08 23:29:30 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/11 21:43:03 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ private:
 	unsigned int attack_damage;
 
 public:
+	ClapTrap();
 	ClapTrap(const std::string name);
 	ClapTrap(const ClapTrap& claptrap);
 	~ClapTrap();

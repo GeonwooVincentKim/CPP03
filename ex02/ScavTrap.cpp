@@ -6,11 +6,14 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 23:33:13 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/11 21:03:30 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/11 21:42:28 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap() {
+}
 
 ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {
 	hit_points = 100;

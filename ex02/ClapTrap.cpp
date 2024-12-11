@@ -6,11 +6,13 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 23:19:22 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/08 23:27:41 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/11 21:42:23 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap() {}
 
 // Constructor with name initialization
 ClapTrap::ClapTrap(const std::string name) : name(name), hit_points(10), energy_points(10), attack_damage(0) {

@@ -6,11 +6,14 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 23:45:06 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/11 21:03:02 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/11 21:41:44 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
+
+FragTrap::FragTrap() {
+}
 
 FragTrap::FragTrap(const std::string name) : ClapTrap(name) {
 	hit_points = 100;

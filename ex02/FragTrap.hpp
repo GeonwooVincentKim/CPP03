@@ -6,7 +6,7 @@
 /*   By: geonwkim <geonwkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 23:44:36 by geonwkim          #+#    #+#             */
-/*   Updated: 2024/12/08 23:50:28 by geonwkim         ###   ########.fr       */
+/*   Updated: 2024/12/11 21:41:36 by geonwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 class FragTrap : public ClapTrap {
 public:
+	FragTrap();
 	FragTrap(const std::string name);
 	FragTrap(const FragTrap& FragTrap);
 	~FragTrap();
